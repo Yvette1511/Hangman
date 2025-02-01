@@ -9,9 +9,6 @@ answer_list = list(answer)
 
 lives = 3
 
-print(answer)
-print(answer_list)
-
 time.sleep(0.5)
 print("Welcome to Hangman!")
 time.sleep(1)
@@ -29,9 +26,7 @@ while True:
         if guess in answer_list:
             print("The letter", guess, "is correct!")
             answer_list.remove(guess)
-            print(answer_list)
             length = len(answer_list)
-            print(length)
             if length == 0:
                 print("You guessed the word! The word was", answer, ".")
                 break
